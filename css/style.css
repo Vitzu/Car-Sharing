@@ -1,7 +1,20 @@
-body {
-  font-family: 'Nunito Sans', sans-serif;
+:root {
+  --base-color: #FFFFFF;
+  --theme-color: #FF0000;
+  --sec-bg-color: #28272C;
+  --shadow-color: #FF00004D;
+  --main-font: 'Nunito Sans';
+  --sec-font: 'Open Sans';
 }
 
-/*.article-text {*/
-/*  font-family: 'Open Sans', sans-serif;*/
-/*}*/
+body {
+  font-family: var(--main-font), sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 1088px;
+  height: 100%;
+}
+
