@@ -13,6 +13,7 @@
 
 body {
   font-family: var(--main-font), sans-serif;
+  background: url("../images/image.png") no-repeat center/cover;
 }
 
 .container {
@@ -69,7 +70,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.7);
 }
 
 .page-logo {
@@ -112,4 +113,59 @@ body {
 
 .page-nav-list a:hover {
   background: #FFFFFF33;
+}
+
+/*  --- LANDING PAGE'S STYLE ---  */
+
+.landing-page {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80vh;
+  color: var(--base-color);
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.landing-page .container {
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.page-title {
+  margin: 20px;
+  font-size: 90px;
+  font-weight: 900;
+  text-transform: uppercase;
+  text-shadow: 0 3 6 var(--shadow-color);
+}
+
+.landing-article {
+  margin: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.landing-page .btn {
+  padding: 22px 55px;
+  margin: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.landing-page .sec-btn {
+  border: none;
+}
+
+.landing-page::after {
+  position: absolute;
+  bottom: -28px;
+  content: '';
+  height: 55px;
+  width: 55px;
+  text-align: center;
+  background: var(--theme-color) url("../images/Icon Arrow Down.svg") no-repeat center;
+  border-radius: 50%;
 }
