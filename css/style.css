@@ -1,3 +1,5 @@
+/*  --- VARIABLES --- */
+
 :root {
   --base-color: #FFFFFF;
   --theme-color: #FF0000;
@@ -6,6 +8,8 @@
   --main-font: 'Nunito Sans';
   --sec-font: 'Open Sans';
 }
+
+/*  --- MAIN STYLES --- */
 
 body {
   font-family: var(--main-font), sans-serif;
@@ -18,3 +22,94 @@ body {
   height: 100%;
 }
 
+/*  --- BUTTONS --- */
+
+.btn {
+  display: inline-block;
+  padding: 10px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  box-shadow: 0 3px 6px var(--shadow-color);
+  cursor: pointer;
+}
+
+.main-btn {
+  color: var(--base-color);
+  background: var(--theme-color);
+}
+
+.sec-btn {
+  color: var(--theme-color);
+  background: var(--base-color);
+  border: 1px solid var(--theme-color);
+}
+
+/*  --- TITLES' STYLES --- */
+
+.section-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.section-title::before, .section-title::after {
+  width: 50px;
+  height: 3px;
+  background: var(--theme-color);
+}
+
+/*  --- HEADER'S STYLES --- */
+
+.page-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.page-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 35px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--theme-color);
+}
+
+.page-logo::before {
+  content: url("../images/icon.svg");
+}
+
+.page-logo > span + span {
+  color: var(--base-color);
+}
+
+.page-header .container {
+  justify-content: space-between;
+}
+
+.page-nav-list {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.page-nav-list a {
+  display: inline-block;
+  padding: 33px 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--base-color);
+}
+
+.page-nav-list a:hover {
+  background: #FFFFFF33;
+}
