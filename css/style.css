@@ -19,7 +19,7 @@ body {
 
 .container {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   justify-content: center;
   width: 1088px;
   height: 100%;
@@ -212,7 +212,6 @@ body {
 }
 
 .blog .container {
-  flex-flow: column wrap;
   align-items: center;
 }
 
