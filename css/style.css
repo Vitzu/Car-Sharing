@@ -36,6 +36,7 @@ section {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 /* BUTTONS' STYLES */
@@ -43,6 +44,7 @@ section {
 .btn {
   display: inline-block;
   padding: 10px;
+  font-family: var(--main-font);
   font-size: 14px;
   font-weight: 700;
   text-align: center;
@@ -127,11 +129,13 @@ article .title {
   color: var(--theme-color);
 }
 
-.page-logo::before {
-  content: url("../images/icon.svg");
+.header__logo {
+  width: 35px;
+  margin-right: 10px;
 }
 
 .page-logo > span + span {
+  padding-left: 5px;
   color: var(--base-color);
 }
 
@@ -378,5 +382,72 @@ article .title {
   padding: 11px 52px;
 }
 
+/* FOOTER STYLES */
 
+.page-footer {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  background: var(--sec-bg-color);
+}
 
+.page-footer .container {
+  align-items: flex-start;
+}
+
+.page-footer .wrapper {
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: center;
+  font-size: 25px;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--theme-color);
+}
+
+.footer__logo > span + span {
+  padding-left: 5px;
+  color: var(--base-color);
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  min-width: 500px;
+}
+
+.footer__nav-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+
+.footer__nav-list a {
+  display: inline-block;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 19px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--base-color);
+}
+
+.footer__nav-list a:hover {
+  color: var(--theme-color);
+}
+
+.footer__copyright {
+  align-self: flex-end;
+  padding-top: 20px;
+  font-family: var(--main-font);
+  font-size: 12px;
+  font-weight: 300;
+  color: var(--sec-text-color);
+}
